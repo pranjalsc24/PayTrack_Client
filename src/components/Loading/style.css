@@ -1,0 +1,27 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  /* Increased height */
+  margin-top: 50px;
+  /* Added margin from top */
+}
+
+.loading-spinner {
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  /* Increased border thickness */
+  border-left-color: #767676;
+  border-radius: 50%;
+  width: 50px;
+  /* Increased width */
+  height: 50px;
+  /* Increased height */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

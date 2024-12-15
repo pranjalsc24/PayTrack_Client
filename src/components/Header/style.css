@@ -1,0 +1,117 @@
+/* Main Header (White and Grey) */
+.hdr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa; /* Light grey background */
+  color: #333; /* Dark text color */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+  height: 60px;
+  /* Subtle border for separation */
+}
+
+/* Left Side (BlogVerse title) */
+.hdr-header-left h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #007bff; /* Blue text color */
+}
+
+/* Right Side (Links and User Profile) */
+.hdr-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.hdr-header-link,
+.hdr-nav-link {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.hdr-header-link:hover,
+.hdr-nav-link:hover {
+  color: #007bff;
+}
+
+.hdr-user-profile {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Slightly reduced margin */
+  height: 35px; /* Reduced height */
+}
+
+.hdr-user-avatar {
+  width: 30px; /* Reduced avatar size */
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure avatar doesn't stretch */
+  margin-right: 8px; /* Adjusted spacing between avatar and username */
+}
+
+.hdr-username {
+  color: #333;
+  font-size: 15px; /* Slightly smaller font size */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Logout Button */
+.hdr-logout-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 8px; /* Reduced padding */
+  cursor: pointer;
+  font-size: 12px; /* Slightly smaller font size */
+  border-radius: 4px; /* Reduced border radius */
+  height: 30px; /* Match the height of other elements */
+  line-height: 22px; /* Align text vertically */
+}
+
+.hdr-logout-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Sub-header Navigation Row */
+.hdr-sub-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  /* border-bottom: 1px solid #ccc; */
+  position: fixed;
+  top: 60px; /* Positioned below the main header */
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 10px 0;
+}
+
+/* Active Navigation Link */
+.hdr-active-link {
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Content Padding */
+body {
+  padding-top: 105px; /* Adjust to accommodate both header rows */
+}
+
+/* Active Navigation Link */
+.hdr-active-link {
+  font-weight: bold;
+  color: #007bff;
+  /* border-bottom: 2px solid #007bff; */
+  border-bottom: none;
+}
